@@ -18,6 +18,7 @@ import Home from './components/Home'
                                             path: '/2', 
                                             component: Home
                                         },
+                                        
                                         {
                                             path: '/:catchAll(.*)', // matches all routes that haven't been defined
                                             component: NotFound
@@ -29,4 +30,3 @@ import Home from './components/Home'
                 const app = createApp(App)
                 app.use(router)
                 app.mount('#app')
-                
